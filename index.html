@@ -56,7 +56,7 @@
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
 html,body{height:100%;overflow:hidden}
 body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue',sans-serif;background:var(--bg);color:var(--text);display:flex;flex-direction:column}
- 
+
 /* TOPBAR */
 .topbar{background:var(--accent);padding:calc(var(--safe-top) + 14px) 16px 14px;display:flex;align-items:center;justify-content:space-between;flex-shrink:0;position:relative;z-index:10}
 .topbar-title{display:flex;align-items:center;gap:10px}
@@ -66,14 +66,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
 .topbar-actions{display:flex;gap:8px}
 .btn-icon{width:36px;height:36px;border-radius:50%;border:none;background:rgba(255,255,255,0.15);color:#fff;font-size:17px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:background .15s}
 .btn-icon:active{background:rgba(255,255,255,0.3)}
- 
+
 /* FILTERS */
 .filters{background:var(--surface);border-bottom:1px solid var(--border);padding:10px 12px;display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;flex-shrink:0}
 .filters::-webkit-scrollbar{display:none}
 .chip{white-space:nowrap;padding:6px 14px;border-radius:var(--pill);border:1px solid var(--border2);background:transparent;font-size:13px;color:var(--text2);cursor:pointer;transition:all .15s;font-family:inherit}
 .chip.active{background:var(--accent);color:#fff;border-color:var(--accent)}
 .chip:active{opacity:.7}
- 
+
 /* STATS */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:12px 12px 0;flex-shrink:0}
 .stat{background:var(--surface);border-radius:var(--rsm);padding:10px 8px;text-align:center;border:1px solid var(--border)}
@@ -82,17 +82,17 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
 .stat-n.red{color:var(--red-mid)}
 .stat-n.amber{color:var(--amber-mid)}
 .stat-n.green{color:var(--green-mid)}
- 
+
 /* SEARCH */
 .search-wrap{padding:10px 12px 4px;flex-shrink:0}
 .search{width:100%;padding:10px 14px 10px 38px;border-radius:var(--pill);border:1px solid var(--border2);background:var(--surface);color:var(--text);font-size:15px;font-family:inherit;outline:none;position:relative}
 .search-wrap{position:relative}
 .search-icon{position:absolute;left:24px;top:50%;transform:translateY(-50%);font-size:16px;pointer-events:none}
- 
+
 /* LIST */
 .list-wrap{flex:1;overflow-y:auto;padding:8px 12px calc(var(--safe-bot) + 80px);-webkit-overflow-scrolling:touch}
 .section-label{font-size:11px;font-weight:600;color:var(--text3);text-transform:uppercase;letter-spacing:.06em;padding:10px 4px 6px;margin-top:4px}
- 
+
 /* CARD */
 .card{background:var(--surface);border-radius:var(--r);border:1px solid var(--border);margin-bottom:8px;overflow:hidden;transition:transform .1s;position:relative}
 .card:active{transform:scale(.98)}
@@ -123,11 +123,11 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
 .empty{text-align:center;padding:3rem 1rem;color:var(--text3)}
 .empty-icon{font-size:48px;margin-bottom:12px}
 .empty p{font-size:15px}
- 
+
 /* FAB */
 .fab{position:fixed;bottom:calc(var(--safe-bot) + 20px);right:20px;width:58px;height:58px;border-radius:50%;background:var(--accent);border:none;color:#fff;font-size:28px;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(28,61,15,.35);transition:transform .15s,box-shadow .15s;z-index:20}
 .fab:active{transform:scale(.92);box-shadow:0 2px 10px rgba(28,61,15,.3)}
- 
+
 /* OVERLAY + SHEET */
 .overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:100;align-items:flex-end;justify-content:center}
 .overlay.open{display:flex;animation:fadeIn .2s}
@@ -139,7 +139,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
 .sheet-header h2{font-size:18px;font-weight:600}
 .sheet-body{overflow-y:auto;padding:16px 20px;flex:1}
 .sheet-footer{padding:12px 20px calc(var(--safe-bot) + 12px);border-top:1px solid var(--border);flex-shrink:0;display:flex;gap:10px}
- 
+
 /* FORM */
 .field{margin-bottom:16px}
 .field label{display:block;font-size:12px;font-weight:600;color:var(--text2);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px}
@@ -147,7 +147,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
 .field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent)}
 .field textarea{resize:none;height:80px;line-height:1.5}
 .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
- 
+
 /* Photo upload */
 .photo-up{border:2px dashed var(--border2);border-radius:12px;overflow:hidden;position:relative;cursor:pointer;transition:border-color .15s;min-height:100px;display:flex;align-items:center;justify-content:center}
 .photo-up:active{border-color:var(--accent)}
@@ -157,13 +157,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
 .photo-up-ph p{font-size:13px;color:var(--text3)}
 .photo-up img{width:100%;max-height:200px;object-fit:cover;display:block}
 .photo-remove{position:absolute;top:8px;right:8px;width:28px;height:28px;border-radius:50%;background:rgba(0,0,0,.5);border:none;color:#fff;font-size:14px;cursor:pointer;display:flex;align-items:center;justify-content:center;z-index:2}
- 
+
 /* Buttons */
 .btn-primary{flex:1;padding:14px;background:var(--accent);color:#fff;border:none;border-radius:14px;font-size:16px;font-weight:600;font-family:inherit;cursor:pointer;transition:opacity .15s}
 .btn-primary:active{opacity:.8}
 .btn-secondary{flex:1;padding:14px;background:var(--surface2);color:var(--text);border:none;border-radius:14px;font-size:16px;font-weight:500;font-family:inherit;cursor:pointer}
 .btn-danger{flex:1;padding:14px;background:var(--red-bg);color:var(--red);border:none;border-radius:14px;font-size:15px;font-weight:600;font-family:inherit;cursor:pointer}
- 
+
 /* DETAIL */
 .detail-photo{width:100%;max-height:200px;object-fit:cover;border-radius:12px;margin-bottom:14px;display:block}
 .detail-ph{width:100%;height:120px;background:var(--surface2);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:56px;margin-bottom:14px}
@@ -173,7 +173,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
 .detail-lbl{font-size:13px;color:var(--text2);flex-shrink:0;padding-right:12px}
 .detail-val{font-size:14px;font-weight:500;text-align:right;word-break:break-word;max-width:65%}
 .detail-notes{background:var(--surface2);border-radius:12px;padding:12px 14px;font-size:14px;line-height:1.6;color:var(--text2);margin-top:10px}
- 
+
 /* MENU */
 .menu-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:200;align-items:flex-end;justify-content:center}
 .menu-overlay.open{display:flex}
@@ -181,14 +181,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
 .menu-btn{width:100%;padding:16px;background:none;border:none;font-size:16px;color:var(--text);font-family:inherit;text-align:left;cursor:pointer;border-radius:12px;display:flex;align-items:center;gap:12px}
 .menu-btn:active{background:var(--surface2)}
 .menu-divider{height:1px;background:var(--border);margin:4px 0}
- 
+
 /* Toast */
 .toast{position:fixed;bottom:calc(var(--safe-bot) + 90px);left:50%;transform:translateX(-50%);background:var(--text);color:var(--bg);padding:10px 20px;border-radius:var(--pill);font-size:14px;font-weight:500;z-index:999;opacity:0;transition:opacity .2s;pointer-events:none;white-space:nowrap}
 .toast.show{opacity:1}
 </style>
 </head>
 <body>
- 
+
 <div class="topbar">
   <div class="topbar-title">
     <div class="topbar-icon">💊</div>
@@ -201,14 +201,14 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
     <button class="btn-icon" onclick="openMenu()" title="Menu">⋮</button>
   </div>
 </div>
- 
+
 <div class="stats" id="stats"></div>
- 
+
 <div class="search-wrap">
   <span class="search-icon">🔍</span>
   <input class="search" id="search" type="search" placeholder="Pesquisar medicamento…" oninput="render()">
 </div>
- 
+
 <div class="filters" id="filters">
   <button class="chip active" data-f="all" onclick="setFilter('all',this)">Todos</button>
   <button class="chip" data-f="expired" onclick="setFilter('expired',this)">🔴 Expirados</button>
@@ -217,12 +217,12 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
   <button class="chip" data-f="open" onclick="setFilter('open',this)">Abertos</button>
   <button class="chip" data-f="closed" onclick="setFilter('closed',this)">Fechados</button>
 </div>
- 
+
 <div class="list-wrap" id="listWrap"></div>
- 
+
 <button class="fab" onclick="openAdd()">+</button>
 <div class="toast" id="toast"></div>
- 
+
 <!-- ADD/EDIT SHEET -->
 <div class="overlay" id="formOverlay" onclick="formOverlayTap(event)">
 <div class="sheet" id="formSheet">
@@ -292,7 +292,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
   </div>
 </div>
 </div>
- 
+
 <!-- DETAIL SHEET -->
 <div class="overlay" id="detailOverlay" onclick="detailOverlayTap(event)">
 <div class="sheet" id="detailSheet">
@@ -308,7 +308,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
   </div>
 </div>
 </div>
- 
+
 <!-- MENU SHEET -->
 <div class="menu-overlay" id="menuOverlay" onclick="menuOverlayTap(event)">
 <div class="menu-sheet">
@@ -322,13 +322,13 @@ body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Helvetica Neue'
   <button class="menu-btn" style="color:var(--text3)" onclick="closeMenu()">Fechar</button>
 </div>
 </div>
- 
+
 <script>
 const EMOJI = {Comprimidos:'💊',Cápsulas:'💊','Pomada / Gel':'🧴',Xarope:'🍶',Gotas:'💧','Penso / Curativo':'🩹',Spray:'💨',Supositório:'🔵',Injetável:'💉',Outro:'📦'};
 let meds = [];
 let editId = null, curPhoto = null, curFilter = 'all';
 let db = null;
- 
+
 const SAMPLE = [
   {id:1,name:'Brufen 400mg',cat:'Comprimidos',open:'closed',exp:'08/2026',qty:'14 comprimidos',loc:'Armário casa de banho',notes:'Anti-inflamatório. Tomar com alimento.',photo:null},
   {id:2,name:'Paracetamol 1g',cat:'Comprimidos',open:'open',exp:'03/2026',qty:'8 comprimidos',loc:'Armário casa de banho',notes:'Febre e dores. Máx 3g/dia adultos.',photo:null},
@@ -336,7 +336,7 @@ const SAMPLE = [
   {id:4,name:'Ventilan',cat:'Spray',open:'closed',exp:'06/2027',qty:'1 inalador',loc:'Bolsa escola',notes:'Broncodilatador. Só em caso de necessidade.',photo:null},
   {id:5,name:'Aspirina 500mg',cat:'Comprimidos',open:'closed',exp:'01/2025',qty:'30 comprimidos',loc:'Armário casa de banho',notes:'EXPIRADO — descartar.',photo:null},
 ];
- 
+
 // IndexedDB — muito mais fiável que localStorage no Safari/iPhone
 function openDB() {
   return new Promise((resolve, reject) => {
@@ -349,7 +349,7 @@ function openDB() {
     req.onerror = () => reject(req.error);
   });
 }
- 
+
 function dbGetAll() {
   return new Promise((resolve, reject) => {
     const tx = db.transaction('meds','readonly');
@@ -358,7 +358,7 @@ function dbGetAll() {
     req.onerror = () => reject(req.error);
   });
 }
- 
+
 function dbSaveAll(items) {
   return new Promise((resolve, reject) => {
     const tx = db.transaction('meds','readwrite');
@@ -369,13 +369,13 @@ function dbSaveAll(items) {
     tx.onerror = () => reject(tx.error);
   });
 }
- 
+
 async function save() {
   await dbSaveAll(meds);
   // fallback também para localStorage
   try { localStorage.setItem('farmacia_backup', JSON.stringify(meds)); } catch(e){}
 }
- 
+
 async function initDB() {
   try {
     db = await openDB();
@@ -400,7 +400,7 @@ async function initDB() {
   }
   render();
 }
- 
+
 function parseExp(e) {
   if (!e || e.length < 7) return null;
   const [m,y] = e.split('/');
@@ -414,14 +414,14 @@ function getStatus(e) {
 function statusLabel(s) { return {expired:'Expirado',expiring:'Expira em breve',ok:'Válido',none:''}[s]||''; }
 function statusBadge(s) { return {expired:'b-exp',expiring:'b-expiring',ok:'b-ok',none:''}[s]||''; }
 function stripeClass(s) { return {expired:'red',expiring:'amber',ok:'green',none:'none'}[s]||'none'; }
- 
+
 function setFilter(f, el) {
   curFilter = f;
   document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
   el.classList.add('active');
   render();
 }
- 
+
 function render() {
   const q = (document.getElementById('search').value||'').toLowerCase();
   let list = meds.filter(m => {
@@ -434,7 +434,7 @@ function render() {
     if (q && !m.name.toLowerCase().includes(q) && !(m.notes||'').toLowerCase().includes(q) && !(m.cat||'').toLowerCase().includes(q)) return false;
     return true;
   });
- 
+
   // sort: expired first, then expiring, then by name
   const order = {expired:0,expiring:1,ok:2,none:3};
   list.sort((a,b) => {
@@ -442,7 +442,7 @@ function render() {
     if (order[sa] !== order[sb]) return order[sa]-order[sb];
     return a.name.localeCompare(b.name);
   });
- 
+
   const total = meds.length;
   const expired = meds.filter(m=>getStatus(m.exp)==='expired').length;
   const expiring = meds.filter(m=>getStatus(m.exp)==='expiring').length;
@@ -452,16 +452,16 @@ function render() {
     <div class="stat"><div class="stat-n amber">${openC}</div><div class="stat-l">Abertos</div></div>
     <div class="stat"><div class="stat-n amber">${expiring}</div><div class="stat-l">A expirar</div></div>
     <div class="stat"><div class="stat-n red">${expired}</div><div class="stat-l">Expirados</div></div>`;
- 
+
   const now = new Date();
   document.getElementById('topSub').textContent = `${total} medicamento${total!==1?'s':''} · ${now.toLocaleDateString('pt-PT')}`;
- 
+
   const wrap = document.getElementById('listWrap');
   if (!list.length) {
     wrap.innerHTML = `<div class="empty"><div class="empty-icon">🔍</div><p>Nenhum resultado encontrado.</p></div>`;
     return;
   }
- 
+
   wrap.innerHTML = list.map(m => {
     const s = getStatus(m.exp);
     const sc = stripeClass(s);
@@ -494,7 +494,7 @@ function render() {
     </div>`;
   }).join('');
 }
- 
+
 // FORM
 function openAdd() {
   editId = null; curPhoto = null;
@@ -533,7 +533,21 @@ function removePhoto(e){e.stopPropagation();curPhoto=null;setPhotoPreview(null);
 function handlePhoto(ev){
   const f=ev.target.files[0]; if(!f)return;
   const r=new FileReader();
-  r.onload=e=>{curPhoto=e.target.result;setPhotoPreview(curPhoto);};
+  r.onload=e=>{
+    const img=new Image();
+    img.onload=()=>{
+      const MAX=600;
+      let w=img.width, h=img.height;
+      if(w>h){if(w>MAX){h=Math.round(h*MAX/w);w=MAX;}}
+      else{if(h>MAX){w=Math.round(w*MAX/h);h=MAX;}}
+      const canvas=document.createElement('canvas');
+      canvas.width=w; canvas.height=h;
+      canvas.getContext('2d').drawImage(img,0,0,w,h);
+      curPhoto=canvas.toDataURL('image/jpeg',0.75);
+      setPhotoPreview(curPhoto);
+    };
+    img.src=e.target.result;
+  };
   r.readAsDataURL(f);
 }
 async function saveMed(){
@@ -557,7 +571,7 @@ async function saveMed(){
 }
 function closeForm(){document.getElementById('formOverlay').classList.remove('open');}
 function formOverlayTap(e){if(e.target===document.getElementById('formOverlay'))closeForm();}
- 
+
 // DETAIL
 function openDetail(id){
   const m=meds.find(x=>x.id===id);
@@ -580,7 +594,7 @@ function openDetail(id){
 }
 function closeDetail(){document.getElementById('detailOverlay').classList.remove('open');}
 function detailOverlayTap(e){if(e.target===document.getElementById('detailOverlay'))closeDetail();}
- 
+
 // DELETE
 async function delConfirm(id){
   const m=meds.find(x=>x.id===id);
@@ -589,12 +603,12 @@ async function delConfirm(id){
   await save(); closeDetail(); render();
   showToast('🗑 Medicamento apagado');
 }
- 
+
 // MENU
 function openMenu(){document.getElementById('menuOverlay').classList.add('open');}
 function closeMenu(){document.getElementById('menuOverlay').classList.remove('open');}
 function menuOverlayTap(e){if(e.target===document.getElementById('menuOverlay'))closeMenu();}
- 
+
 function exportData(){
   const json=JSON.stringify(meds,null,2);
   const blob=new Blob([json],{type:'application/json'});
@@ -632,14 +646,14 @@ async function clearExpired(){
   await save(); closeMenu(); render();
   showToast(`🧹 ${n} expirado${n!==1?'s':''} removido${n!==1?'s':''}`);
 }
- 
+
 // TOAST
 function showToast(msg){
   const t=document.getElementById('toast');
   t.textContent=msg; t.classList.add('show');
   setTimeout(()=>t.classList.remove('show'),2500);
 }
- 
+
 // VALIDADE AUTO-FORMAT
 document.addEventListener('DOMContentLoaded',()=>{
   const fExp=document.getElementById('fExp');
@@ -649,7 +663,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     fExp.value=v;
   });
 });
- 
+
 // Arrancar com IndexedDB
 initDB();
 </script>
